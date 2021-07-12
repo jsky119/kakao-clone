@@ -1,0 +1,66 @@
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header__title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.65;
+}
+
+/*
+이 줄을 기점으로 윗 부분은 BEM (Blcok, Element, Modifier) 형식으로 선택자를 작성했고
+아랫 부분은 id를 이용하여 선택자를 작성했다.
+*/
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input {
+    padding: 15px 0px;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;    
+}
+
+#login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4)
+}
+
+/* 로그인폼의 인풋의 타입이 submit이 아닐 때 적용되는 스타일 */
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.4s ease-in-out;
+}
+
+#login-form input[type="submit"] {
+    /* variables.css에서 root의 색상을 선언하고 그것을 가져와서 사용 */
+    background-color: var(--yellow); 
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 4px;
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit; /* inherit를 값으로 사용하여 부모의 속성을 상속 */
+    font-size: 13px;
+}
