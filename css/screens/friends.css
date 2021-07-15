@@ -5,6 +5,7 @@
   padding: 15px 0px;
   font-size: 16px;
   margin-bottom: 10px;
+  margin-top: -15px; /* screen-header의 margin-bottom: 15px을 상쇄하는 Negative margin */
 }
 
 #friends-display-link i {
