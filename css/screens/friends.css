@@ -51,6 +51,6 @@
   align-items: center;
   font-size: 128px;
   color: rgba(0, 0, 0, 0.85);
-  animation: hideSplashScreen 1.5s ease-in-out forwards;
-  animation-delay: 1s;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
